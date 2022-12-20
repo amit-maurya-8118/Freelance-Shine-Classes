@@ -1,0 +1,314 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serf;
+}
+.main{
+	
+background-image: url(images.jpeg);
+height: 100vh;
+width: 100%;
+background-size: cover;
+position: relative;
+background-position: center; 
+
+
+}
+.navbar{
+	display: flex;
+	padding: 2% 2%;
+	justify-content: space-between;
+	
+}
+.navbar .logo{
+	float: left;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+
+}
+.navbar .logo p{
+	color: white;
+	text-transform: uppercase;
+	margin: 20px 40px;
+    font-size: 50px;
+}
+.navbar ul{
+overflow: none;
+ bottom: -10px;
+ flex: 1;
+ text-align: right;
+}
+
+.navbar ul li{
+
+	list-style: none;
+	padding: 3px 3px;
+	margin: 20px 30px;
+	 
+	display: inline-block;
+	list-style: none;
+}
+
+
+.navbar li a{
+	text-decoration: none;
+	color: red;
+    text-transform: uppercase;
+
+}
+
+
+
+
+.navbar ul li a:hover{
+	
+    color: white;
+    transition: 0.2s;
+    text-decoration: underline;
+    
+    width: 100%;
+
+
+}
+
+.content{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%,-50%);
+	color: white;
+	text-align: center;
+}	
+
+.content h1{
+	font-size: 62px;
+}
+.content p{
+	margin: 10px 40px;
+	font-size: 20px
+	color:white;
+}
+
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	padding: 2px 30px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+	border: 1px solid black;
+	background: red;
+	transition: 1s;
+}
+
+@media(max-width: 700px){
+
+.content h1{
+	font-size: 20px;
+}
+.content p{
+	font-size: 15px;
+}
+    .navbar ul li{
+ 	display: block;
+ }
+   .navbar{
+ 	position: absolute;
+ 	background: gray;
+ 	height: 100vh;
+ 	width: 200px 
+ 	top: 0;
+ 	right: 0;
+ 	text-align: left;
+ 	z-index: 2;
+   }
+
+}
+
+.about{
+	margin: 10px 20px;
+	text-align: center;
+	
+	padding-top: 100px;
+
+}
+  .about h1{
+  	font-size: 40px;
+
+
+  }
+.about p{
+	color: gray;
+}
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	margin: 20px 100px;
+	margin-top: 50px;
+
+}
+.col{
+	flex-basis: 31%;
+	background: #fff3f3;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 10px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+
+.col h1{
+	font-size: 30px;
+
+}
+.col p{
+	margin: 10px 0px;
+	font-size: 15px;
+	color: gray;
+}
+.col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+}
+
+@media(max-width: 700px){
+    .row{
+    	flex-direction: column;
+    	margin: 10px 10px;
+    } 
+   
+   
+}
+
+
+.activity{
+	width: 80%;
+	text-align: center;
+	margin: 0px 80px;
+	padding: 0px auto;
+
+
+}
+
+.activity h1{
+    font-size: 40px;
+}
+
+.activity p{
+	margin: 10px 0px;
+	font-size: 15px;
+	color: gray;
+}
+.row-img{
+	max-width: 960px;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 20px;
+	
+}
+
+
+.gallery{
+	margin: 20px;
+	
+	float: left;
+	width: 390px;
+
+	
+}
+.gallery img{
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.gallery h3{
+	padding: 10px;
+	text-align: center;
+	margin: auto;
+
+}
+.gallery p{
+	padding: 0px;
+	text-align: center;
+}
+@media(max-width: 700px)
+{
+.activity{
+	
+	margin: 2px 20px;
+}
+.row-img{
+	flex-direction: column;
+	max-width: 960px;
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	
+}
+.gallery img{
+	width: 60%;
+	height: auto;
+	border-radius: 10px;
+}
+.gallery h3{
+	
+	text-align: left;
+}
+.gallery p{
+	text-align: left;
+	margin: 9px;
+}
+}
+
+	/*-----call to action-------*/
+
+.cta{
+		margin: 10px auto;
+		width: 90%;
+		background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imag.jpeg);
+		background-position: center;
+		background-size: cover;
+		border-radius: 10px;
+		text-align: center;
+		padding: 200px 10;
+	}
+
+.cta h1{
+	margin: 10px 0px;
+	font-size: 20px;
+	color: white;
+}
+
+
+/*-----footer-------*/
+
+
+.footer{
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+
+}
+
+.footer h4{
+	margin-bottom: 25px;
+	margin-top: 20px;
+	font-weight: 600;
+
+}
+
+
+

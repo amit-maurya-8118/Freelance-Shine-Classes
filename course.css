@@ -1,0 +1,172 @@
+.{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serf;
+}
+
+
+.main{
+  
+background-color: purple;
+height: 10vh;
+width: 100%;
+background-size: cover;
+position: relative;
+background-position: center; 
+
+
+}
+nav{
+  display: flex;
+  padding: 2% 2%;
+  justify-content: space-between;
+  
+}
+
+nav .logo{
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+}
+nav .logo p{
+  color: white;
+  text-transform: uppercase;
+  margin: 0px 30px;
+    font-size: 40px;
+}
+.navbar ul{
+  overflow: auto;
+ bottom: -10px;
+ flex: 1;
+ text-align: right;
+}
+
+.navbar ul li{
+
+  list-style: none;
+  padding: 0px 3px;
+  margin: 0px 30px;
+   
+  display: inline-block;
+  list-style: none;
+}
+
+
+.navbar li a{
+  text-decoration: none;
+  color: red;
+    text-transform: uppercase;
+
+}
+
+
+
+
+.navbar ul li a:hover{
+  
+    color: white;
+    transition: 0.2s;
+    text-decoration: underline;
+    
+    width: 100%;
+  }
+
+body {
+  background-color: white;
+}
+
+.heading h1 {
+  color: black;
+  text-align: center;
+}
+
+.heading p {
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center; 
+}
+  
+.row{
+	display: flex;
+	
+}
+.col1 {
+  margin: 40px 50px;
+  text-align: center;
+  width: 500px;
+  
+  align-items: center;
+}
+
+.col {
+  margin: 40px 50px;
+  border: 1px solid #311111;
+  width: 500px;
+  transition: 0.4s;
+  align-items: center;
+}
+
+.col:hover {
+  border: 2px solid red;
+  transform: scale(1.1);
+}
+
+.col img {
+  width: 100%;
+  height: 40vh;
+}
+.sub{
+	text-align: left;
+}
+
+@media(max-width: 700px){
+  
+.row{
+  flex-direction: column;
+}
+.col1 {
+  margin: 40px 30px;
+  text-align: center;
+  width: 200px;
+  
+  align-items: center;
+}
+
+.col {
+  margin: 10px 10px;
+  border: 1px solid #311111;
+  width: 250px;
+  transition: 0.4s;
+  align-items: center;
+}
+
+.col:hover {
+  border: 2px solid red;
+  transform: scale(1.1);
+}
+
+.col img {
+  width: 100%;
+  height: 40vh;
+  .col1 {
+  margin: 40px 50px;
+  text-align: center;
+  width: 500px;
+  
+  align-items: center;
+}
+nav .logo{
+  float: left;
+  font-size: 5px;
+  
+  }
+nav .logo p{
+  color: white;
+  text-transform: uppercase;
+  margin: 0px 30px;
+    font-size: 5px;
+}
+
+
